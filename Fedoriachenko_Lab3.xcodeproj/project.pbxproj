@@ -25,10 +25,10 @@
 		CCFB246C25521B9C001CF488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFB246F25521B9C001CF488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCFB247125521B9C001CF488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCFB247A25521BD4001CF488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Lab3Feofanov/Lab3Feofanov/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CCFB247E25521BEC001CF488 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Lab3Feofanov/Lab3Feofanov/ViewController.swift; sourceTree = "<group>"; };
-		CCFB248125521C1A001CF488 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCell.swift; path = ../../Lab3Feofanov/Lab3Feofanov/MovieCell.swift; sourceTree = "<group>"; };
-		CCFB248425521C25001CF488 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../../Lab3Feofanov/Lab3Feofanov/Movie.swift; sourceTree = "<group>"; };
+		CCFB247A25521BD4001CF488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCFB247E25521BEC001CF488 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/ViewController.swift; sourceTree = "<group>"; };
+		CCFB248125521C1A001CF488 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCell.swift; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/MovieCell.swift; sourceTree = "<group>"; };
+		CCFB248425521C25001CF488 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/Movie.swift; sourceTree = "<group>"; };
 		CCFB248725521C31001CF488 /* MoviesList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MoviesList.txt; path = "../../../../Downloads/Programming assignment 3/MoviesList.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
