@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC7EE591256AAA0300D73B83 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE590256AAA0200D73B83 /* MovieInfoViewController.swift */; };
+		CC7EE594256AAA0B00D73B83 /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE593256AAA0B00D73B83 /* AddMovieViewController.swift */; };
 		CCFB246425521B99001CF488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB246325521B99001CF488 /* AppDelegate.swift */; };
 		CCFB246625521B99001CF488 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB246525521B99001CF488 /* SceneDelegate.swift */; };
 		CCFB246D25521B9C001CF488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFB246C25521B9C001CF488 /* Assets.xcassets */; };
@@ -19,14 +21,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC7EE590256AAA0200D73B83 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
+		CC7EE593256AAA0B00D73B83 /* AddMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		CCFB246025521B99001CF488 /* Fedoriachenko_Lab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fedoriachenko_Lab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB246325521B99001CF488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCFB246525521B99001CF488 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CCFB246C25521B9C001CF488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCFB246F25521B9C001CF488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCFB247125521B9C001CF488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CCFB247A25521BD4001CF488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CCFB247E25521BEC001CF488 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/ViewController.swift; sourceTree = "<group>"; };
+		CCFB247A25521BD4001CF488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCFB247E25521BEC001CF488 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CCFB248125521C1A001CF488 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MovieCell.swift; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/MovieCell.swift; sourceTree = "<group>"; };
 		CCFB248425521C25001CF488 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../../Fedoriachenko_Lab3/Fedoriachenko_Lab3/Movie.swift; sourceTree = "<group>"; };
 		CCFB248725521C31001CF488 /* MoviesList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MoviesList.txt; path = "../../../../Downloads/Programming assignment 3/MoviesList.txt"; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				CCFB248725521C31001CF488 /* MoviesList.txt */,
 				CCFB246E25521B9C001CF488 /* LaunchScreen.storyboard */,
 				CCFB248425521C25001CF488 /* Movie.swift */,
+				CC7EE590256AAA0200D73B83 /* MovieInfoViewController.swift */,
+				CC7EE593256AAA0B00D73B83 /* AddMovieViewController.swift */,
 				CCFB247125521B9C001CF488 /* Info.plist */,
 			);
 			path = Fedoriachenko_Lab3;
@@ -92,7 +98,7 @@
 			dependencies = (
 			);
 			name = Fedoriachenko_Lab3;
-			productName = Fedoriachenko_Lab3;
+			productName = Fedoryachenko_Lab3;
 			productReference = CCFB246025521B99001CF488 /* Fedoriachenko_Lab3.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -150,8 +156,10 @@
 				CCFB247F25521BEC001CF488 /* ViewController.swift in Sources */,
 				CCFB246425521B99001CF488 /* AppDelegate.swift in Sources */,
 				CCFB248225521C1A001CF488 /* MovieCell.swift in Sources */,
+				CC7EE594256AAA0B00D73B83 /* AddMovieViewController.swift in Sources */,
 				CCFB246625521B99001CF488 /* SceneDelegate.swift in Sources */,
 				CCFB248525521C25001CF488 /* Movie.swift in Sources */,
+				CC7EE591256AAA0300D73B83 /* MovieInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
