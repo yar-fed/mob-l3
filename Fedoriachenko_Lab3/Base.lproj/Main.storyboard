@@ -3,22 +3,85 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Photos-->
         <scene sceneID="fv0-6i-7X1">
             <objects>
-                <viewController id="pCY-rr-7Cs" sceneMemberID="viewController">
+                <viewController id="pCY-rr-7Cs" customClass="CollectionCellViewController" customModule="Fedoriachenko_Lab3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fXJ-iU-ddz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dwn-Yl-2Eo">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="F6i-AA-5KD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCell" id="7nH-Sa-mtt" customClass="CollectionViewCell" customModule="Fedoriachenko_Lab3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CF4-VM-UOF">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F5A-rO-wHD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="F5A-rO-wHD" firstAttribute="leading" secondItem="CF4-VM-UOF" secondAttribute="leading" id="DSX-Ig-Xsu"/>
+                                                <constraint firstAttribute="trailing" secondItem="F5A-rO-wHD" secondAttribute="trailing" id="Qbh-mi-gb6"/>
+                                                <constraint firstItem="F5A-rO-wHD" firstAttribute="top" secondItem="CF4-VM-UOF" secondAttribute="top" id="Qyp-k3-gcb"/>
+                                                <constraint firstAttribute="bottom" secondItem="F5A-rO-wHD" secondAttribute="bottom" id="WQb-WI-kfU"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="F5A-rO-wHD" id="49J-iT-LVc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="pCY-rr-7Cs" id="5d3-1I-ysb"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3g-Kv-flP">
+                                <rect key="frame" x="0.0" y="54" width="414" height="80"/>
+                                <state key="normal" title="Add new photo"/>
+                                <connections>
+                                    <action selector="didPressButton:" destination="pCY-rr-7Cs" eventType="touchUpInside" id="5ag-7G-H0e"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cZf-1X-tiW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cZf-1X-tiW" firstAttribute="trailing" secondItem="u3g-Kv-flP" secondAttribute="trailing" id="0Ha-KX-gZC"/>
+                            <constraint firstItem="Dwn-Yl-2Eo" firstAttribute="top" secondItem="cZf-1X-tiW" secondAttribute="top" constant="100" id="7kR-HP-iMO"/>
+                            <constraint firstItem="cZf-1X-tiW" firstAttribute="trailing" secondItem="Dwn-Yl-2Eo" secondAttribute="trailing" id="DTI-9n-Z0b"/>
+                            <constraint firstItem="cZf-1X-tiW" firstAttribute="bottom" secondItem="Dwn-Yl-2Eo" secondAttribute="bottom" id="JMG-SH-tXe"/>
+                            <constraint firstItem="Dwn-Yl-2Eo" firstAttribute="leading" secondItem="cZf-1X-tiW" secondAttribute="leading" id="aMz-Fy-cIX"/>
+                            <constraint firstItem="u3g-Kv-flP" firstAttribute="leading" secondItem="cZf-1X-tiW" secondAttribute="leading" id="dCh-wo-ALg"/>
+                            <constraint firstItem="Dwn-Yl-2Eo" firstAttribute="centerX" secondItem="fXJ-iU-ddz" secondAttribute="centerX" id="eIo-sn-28S"/>
+                            <constraint firstItem="Dwn-Yl-2Eo" firstAttribute="top" secondItem="u3g-Kv-flP" secondAttribute="bottom" constant="10" id="gmA-eR-aWu"/>
+                            <constraint firstItem="u3g-Kv-flP" firstAttribute="top" secondItem="cZf-1X-tiW" secondAttribute="top" constant="10" id="umX-IL-9pp"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="eLb-gj-fmF"/>
+                    <tabBarItem key="tabBarItem" title="Photos" image="photo" catalog="system" id="eLb-gj-fmF"/>
+                    <connections>
+                        <outlet property="cellCollectionView" destination="Dwn-Yl-2Eo" id="iXP-Yk-0cE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pyW-Jg-DKG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,6 +405,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
