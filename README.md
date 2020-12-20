@@ -1,3 +1,8 @@
+# Lab 6
+
+### Problems:
+ - Drawing on canvas is a lot more difficult then using graph drawing libraries
+
 # Lab 5
 
 ### Problems:
