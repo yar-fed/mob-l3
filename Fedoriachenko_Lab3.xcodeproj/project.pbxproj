@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC391757258E42AA008DCC55 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC391756258E42AA008DCC55 /* SegmentedController.swift */; };
+		CC39175A258E43A6008DCC55 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC391759258E43A6008DCC55 /* ChartView.swift */; };
+		CC39175D258E43B4008DCC55 /* DiagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC39175C258E43B4008DCC55 /* DiagramView.swift */; };
 		CC7EE591256AAA0300D73B83 /* MovieInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE590256AAA0200D73B83 /* MovieInfoViewController.swift */; };
 		CC7EE594256AAA0B00D73B83 /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE593256AAA0B00D73B83 /* AddMovieViewController.swift */; };
 		CCA986592579464800246935 /* CollectionCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA986582579464800246935 /* CollectionCellViewController.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC391756258E42AA008DCC55 /* SegmentedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
+		CC391759258E43A6008DCC55 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		CC39175C258E43B4008DCC55 /* DiagramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagramView.swift; sourceTree = "<group>"; };
 		CC7EE590256AAA0200D73B83 /* MovieInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoViewController.swift; sourceTree = "<group>"; };
 		CC7EE593256AAA0B00D73B83 /* AddMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		CCA986582579464800246935 /* CollectionCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCellViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				CCA986582579464800246935 /* CollectionCellViewController.swift */,
 				CCA9865B2579467200246935 /* PhotoCollectionCell.swift */,
 				CCA9865E257946DA00246935 /* CollectionViewCell.swift */,
+				CC391756258E42AA008DCC55 /* SegmentedController.swift */,
+				CC391759258E43A6008DCC55 /* ChartView.swift */,
+				CC39175C258E43B4008DCC55 /* DiagramView.swift */,
 			);
 			path = Fedoriachenko_Lab3;
 			sourceTree = "<group>";
@@ -107,7 +116,7 @@
 			dependencies = (
 			);
 			name = Fedoriachenko_Lab3;
-			productName = Fedoryachenko_Lab3;
+			productName = Fedoriachenko_Lab3;
 			productReference = CCFB246025521B99001CF488 /* Fedoriachenko_Lab3.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -167,11 +176,14 @@
 				CCFB247F25521BEC001CF488 /* ViewController.swift in Sources */,
 				CCFB246425521B99001CF488 /* AppDelegate.swift in Sources */,
 				CCA9865C2579467200246935 /* PhotoCollectionCell.swift in Sources */,
+				CC391757258E42AA008DCC55 /* SegmentedController.swift in Sources */,
 				CCFB248225521C1A001CF488 /* MovieCell.swift in Sources */,
 				CC7EE594256AAA0B00D73B83 /* AddMovieViewController.swift in Sources */,
 				CCFB246625521B99001CF488 /* SceneDelegate.swift in Sources */,
 				CCFB248525521C25001CF488 /* Movie.swift in Sources */,
 				CC7EE591256AAA0300D73B83 /* MovieInfoViewController.swift in Sources */,
+				CC39175A258E43A6008DCC55 /* ChartView.swift in Sources */,
+				CC39175D258E43B4008DCC55 /* DiagramView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

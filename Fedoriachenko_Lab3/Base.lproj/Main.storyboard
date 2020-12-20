@@ -378,17 +378,53 @@
                     <connections>
                         <segue destination="PxK-BP-9cQ" kind="relationship" relationship="viewControllers" id="isZ-IZ-f6s"/>
                         <segue destination="pCY-rr-7Cs" kind="relationship" relationship="viewControllers" id="25f-k6-6pV"/>
+                        <segue destination="rLc-vF-She" kind="relationship" relationship="viewControllers" id="xU6-MD-vMy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iiS-sX-Xc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1490" y="-305"/>
         </scene>
+        <!--Charts-->
+        <scene sceneID="qgM-Z6-fva">
+            <objects>
+                <viewController id="rLc-vF-She" customClass="SegmentedController" customModule="Fedoriachenko_Lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gzv-IB-C6f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ls2-Ux-bYf">
+                                <rect key="frame" x="136.5" y="94" width="141" height="32"/>
+                                <segments>
+                                    <segment title="Chart"/>
+                                    <segment title="Diagram"/>
+                                </segments>
+                                <connections>
+                                    <action selector="indexChanged:" destination="rLc-vF-She" eventType="valueChanged" id="aAg-5u-LX0"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xKl-Q3-l8K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ls2-Ux-bYf" firstAttribute="centerX" secondItem="Gzv-IB-C6f" secondAttribute="centerX" id="3rJ-77-zyW"/>
+                            <constraint firstItem="Ls2-Ux-bYf" firstAttribute="top" secondItem="xKl-Q3-l8K" secondAttribute="top" constant="50" id="8se-6Z-ZWn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Charts" image="hand.draw" catalog="system" id="2sG-gP-U30"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="Ls2-Ux-bYf" id="UK9-jW-GQX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpT-gv-r1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1491" y="449"/>
+        </scene>
         <!--Movies list-->
         <scene sceneID="6e8-bP-q0r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PxK-BP-9cQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Movies list" id="70R-Wr-cSr"/>
+                    <tabBarItem key="tabBarItem" title="Movies list" image="film" catalog="system" id="70R-Wr-cSr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l8g-I1-zTW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -405,6 +441,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="film" catalog="system" width="128" height="93"/>
+        <image name="hand.draw" catalog="system" width="128" height="113"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
